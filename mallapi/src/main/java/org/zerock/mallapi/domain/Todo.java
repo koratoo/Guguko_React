@@ -11,13 +11,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+/**
+ * <pre>
+ *      작성자 : 김지성
+ *      클래스명 : Todo.java
+ *      작성일 : 23.12.10
+ *      설명 : Todo Entitiy 클래스, Jpa와 연동하여 사용됨
+ * </pre>
+ */
+
+
 @Getter
 @ToString
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Todo {
-    //git 최신 내용 반영 커밋 테스트
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long tno;
