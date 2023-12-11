@@ -2,9 +2,7 @@ package org.zerock.mallapi.domain;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -20,7 +18,8 @@ import lombok.ToString;
  * </pre>
  */
 
-
+@Entity
+@Table(name ="tbl_todo")
 @Getter
 @ToString
 @Builder
