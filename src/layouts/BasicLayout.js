@@ -21,3 +21,5 @@ const BaiscLayout = ({children}) => {
         </>
     );
 }
+
+export default BaiscLayout;

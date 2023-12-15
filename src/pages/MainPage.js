@@ -1,8 +1,12 @@
+import BaiscLayout from "../layouts/BasicLayout";
+
 const MainPage = () => {
     return (
-        <div className=" text-3xl">
+        <BaiscLayout>
+         <div className=" text-3xl">
             <div>Main Page</div>
         </div>
+        </BaiscLayout>
     );
 }
 
