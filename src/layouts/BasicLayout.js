@@ -1,17 +1,13 @@
 import BasicMenu from "../components/menus/BasicMenu";
 
-const BaiscLayout = ({children}) => {
+const BasicLayout = ({children}) => {
     return (
         <>
-        <BasicMenu/>
-        <header className="bg-teal-400 p-5">
-            <h1 className="text-2xl md:text-4xl">
-            Header
-            </h1>
-        </header>
 
-        <div className = "bg-white my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-            <main className="bg-sky-300 md:w-2/3 lg:w-3/4 px-5 py-40">
+        <BasicMenu/>
+
+        <div className = "bg-white my-5 w-full flex flex-col space-y-1 md:flex-row">
+            <main className="bg-sky-300 md:w-2/3 lg:w-3/4 px-5 py-5">
                 {children}
             </main>
 
@@ -25,4 +21,4 @@ const BaiscLayout = ({children}) => {
     );
 }
 
-export default BaiscLayout;
+export default BasicLayout;

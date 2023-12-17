@@ -9,6 +9,8 @@ const About = lazy(() => import("../pages/AboutPage"))
 
 const TodoIndex = lazy(() => import("../pages/todo/IndexPage"))
 
+const TodoList = lazy(() => import("../pages/todo/ListPage"))
+
 const root = createBrowserRouter([
     {
         path: "",
