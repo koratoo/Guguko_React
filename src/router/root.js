@@ -20,7 +20,13 @@ const root = createBrowserRouter([
     },
     {
         path: "todo",
-        element: <Suspense fallback={Loading}><TodoIndex/></Suspense>
+        element: <Suspense fallback={Loading}><TodoIndex/></Suspense>,
+        children: [
+            {
+                path: "list",
+                element: <Suspense fallback={Loading}><TodoList/></Suspense>
+            }
+        ]
     }
 ])
 
