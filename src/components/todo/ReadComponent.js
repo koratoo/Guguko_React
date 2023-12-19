@@ -1,0 +1,28 @@
+import { useEffect, useState } from "react";
+import { getOne } from "../../api/todoApi";
+
+const initState = {
+    tno:0,
+    title:'',
+    writer:'',
+    dueDate: null,
+    complete: false
+}
+
+const ReadComponent = ({tno}) => {
+    const [todo, setTodo] = useState(initState) //아직 todo는 사용하지 않음
+
+    useEffect(() =>{
+        getOne(tno).then(data => {
+            console.log(data)
+            setTodo(data)
+        })
+    },[tno])
+    return (
+        <div>
+
+        </div>
+    )
+}
+
+export default ReadComponent
